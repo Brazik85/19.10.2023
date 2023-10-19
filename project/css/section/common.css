@@ -1,0 +1,68 @@
+/* BUTTONS */
+
+.btn {
+    border-radius: 5px;
+
+    color: #FFF;
+    text-align: center;
+
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.btn_theme_blue {
+    background-color: #1E92E7;
+    color: #FFF;
+}
+
+.btn_theme_transparent {
+    background-color: transparent;
+    border: 1px solid #1E92E7;
+    color: #000000;
+}
+
+.btn_size_big {
+    padding: 14px 20px;
+}
+
+.btn_size_small {
+    padding: 9px 20px;
+}
+
+.btn.active {
+    background-color: #1E92E7;
+    color: #FFF;
+}
+
+.btn {}
+
+.btn_theme_transparent {}
+
+.btn_size_small {}
+
+/* Блок для переключателя слайда */
+.control {
+    font-size: 0px;
+    position: absolute;
+    z-index: 100;
+}
+
+/* Рисуем триугольник(переключение слайда) */
+.control::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #7A7A7A;
+    border-top: none;
+    border-right: none;
+
+}
+
+.control_prev {
+    transform: rotate(45deg);
+}
